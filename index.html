@@ -5,9 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+ 
+
+
+
     
+    <div class="container">
+
+          <div class="title-section">
+             <h2 class="title-text"> PASSWORD GENERATOR </h2> 
+                  </div>
+            <div class="text-area">
+              <input type="text" placeholder="Create Password" class="text-class" id="result-screen">
+               <button class="copy-button" onclick="copytext()">Copy</button>
+            </div>
+           <div class="slider-div">
+            <h3>Length :<span id="slide-length">  16 </span></h3> 
+                <span>4</span> 
+               <input type="range" min="4" max="32" value="16" class="slider" id="myRange">
+              <span>32</span> 
+              </div>
+           <div class="button-area">
+             <button class="btn" onclick="generateButton()">GENERATE PASSWORD</button>
+           </div>
+
+    </div>
+
 <script src="script.js"></script>
 </body>
 </html>
